@@ -1,0 +1,18 @@
+img{
+    width: 200px;
+    height: 200px;
+}
+ .img-input{
+    gap: 16px;
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+.cantidad{
+    display: flex;
+    gap:150px;
+}
+.result{
+    text-align: center;
+}

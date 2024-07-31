@@ -1,20 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
-    <img src="./assets/img/manzana.PNG" class="mi-imagen" onclick="manzana()" alt="imagen manzana">
-    
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <img
+      src="./assets/img/manzana.PNG"
+      class="mi-imagen"
+      onclick="manzana()"
+      alt="imagen manzana"
+    />
 
     <nav>
-        
+      <h1>Puedes utiliza maximo 10 stickers</h1>
+      <div class="cantidad">
+        <div class="img-input">
+          <img src="./assets/img/banqueta.jpeg" alt="manqueta" />
+          <input class="stickeruno" type="number" />
+        </div>
+        <div class="img-input">
+          <img src="./assets/img/silla-niño.jpeg" alt="silla de niño" />
+          <input class="stickerdos" type="number" />
+        </div>
+        <div class="img-input">
+          <img src="./assets/img/silla-de-bar.jpeg" alt="silla de bar" />
+          <input class="stickertres" type="number" />
+        </div>
+      </div>
+      <div class="result" id="result">
+        <p>Llevas 0 stickers</p>
+        <button onclick="verificar()">Verificar</button>
+      </div>
     </nav>
 
-
     <script src="./assets/js/Script.js"></script>
-</body>
+  </body>
 </html>
