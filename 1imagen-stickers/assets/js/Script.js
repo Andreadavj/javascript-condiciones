@@ -10,11 +10,20 @@ const manzana = ()=> {
 }
 // tarea numero dos
 
-const mostrar = ()=> {
-    const sumauno =parseFloat(document.querySelector('.stickeruno').value) || 0;
-    const sumados =parseFloat(document.querySelector('.stickerdos').value) || 0;
-    const sumatres =parseFloat(document.querySelector('.stickertres').value) || 0;
+const verificar = ()=> {
+    const sticker1 =parseFloat(document.querySelector('.sticker1').value) || 0;
+    const sticker2 =parseFloat(document.querySelector('.sticker2').value) || 0;
+    const sticker3 =parseFloat(document.querySelector('.sticker3').value) || 0;
 
-    const suma = sumauno + sumados + sumatres;
-    
+    const suma = sticker1 + sticker2 + sticker3;
+    const result = document.getElementById('result');
+    if(suma <= 9){
+        document.getElementById('result').textContent =  'el resultado es: '+ suma +'Llevas menos stickers';
+    }
+    else if(suma <= 10 && suma >= 1 ){
+        document.getElementById('result').textContent = 'el resultado es: '+ suma +'Llevas la cantidad correcta de stickers'; 
+    }
+    else{
+        document.getElementById('result').textContent = 'el resultado es: '+ suma +'Llevas demasiados stickers';
+    }
 }
